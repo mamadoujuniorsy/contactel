@@ -1,0 +1,69 @@
+/* =============================================
+   index.css — Styles ContacTel
+   ============================================= */
+
+/* --- Base --- */
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    -webkit-user-select: none;
+    user-select: none;
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+/* --- Avatar dans la liste --- */
+.contact-avatar {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+    object-fit: cover;
+}
+
+/* --- En-tête de la page détail --- */
+.contact-detail-header {
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
+
+.contact-detail-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+}
+
+.contact-detail-name {
+    margin-top: 12px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* --- Boutons actions page détail --- */
+.contact-detail-actions {
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.contact-detail-actions a {
+    flex: 1;
+}
+
+.btn-danger.ui-btn {
+    background-color: #c0392b !important;
+    border-color: #c0392b !important;
+    color: #fff !important;
+}
+
+/* --- Message d'erreur --- */
+.contact-error {
+    color: #c0392b;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}

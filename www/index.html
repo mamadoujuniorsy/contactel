@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ContacTel</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="cordova.js"></script>
+
+    <script src="js/model/ContactModel.js"></script>
+    <script src="js/view/ContactListView.js"></script>
+    <script src="js/controller/ContactListController.js"></script>
+</head>
+<body>
+
+    <div id="homePage" data-role="page">
+        <div data-role="header">
+            <h1>ContacTel</h1>
+            <a href="#" id="btnAddContact" class="ui-btn-right" data-icon="plus">Ajouter</a>
+        </div>
+        <div role="main" class="ui-content">
+            <ul id="contactList"
+                data-role="listview"
+                data-inset="true"
+                data-filter="true"
+                data-split-icon="delete"
+                data-split-theme="b"
+                data-filter-placeholder="Rechercher un contact...">
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
